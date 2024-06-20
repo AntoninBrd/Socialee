@@ -1,0 +1,98 @@
+.header {
+
+    display: flex;
+    align-items: center;
+    border: none;
+    
+    button {
+        margin-right: 200px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 1.25rem;
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 0.25rem;
+        @include mq(768px) {
+            font-size: 1.25rem;
+        }
+    }
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+    
+    label {
+        font-size: x-large;
+        font-weight: bold;
+        color: black;
+
+    }          
+}
+
+.chat-container { 
+    width: 90%;
+    max-width: 700px; 
+    margin: 10px auto; 
+    background-color: $container-bgcolor; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+} 
+
+.message-container { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.message { 
+    padding: 10px; 
+    margin: 15px;
+    border-radius: 100px; 
+    max-width: 100%; 
+    word-wrap: break-word; 
+    display: flex; 
+    align-items: center;
+    font-size: medium;
+} 
+
+.sender-message { 
+    background-color: #e0e0e0; 
+    color: #000; 
+    align-self: flex-start; 
+} 
+
+.receiver-message { 
+    background-color: #4CAF50; 
+    color: #fff; 
+    align-self: flex-end; 
+} 
+
+.avatar { 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+} 
+
+.message input { 
+    width: calc(100% - 10px); 
+    padding: 15px; 
+    margin: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 15px; 
+} 
+
+.message button { 
+    padding: 15px; 
+    margin: 10px; 
+    background-color: #4CAF50; 
+    color: #fff; 
+    border: none; 
+    border-radius: 15px; 
+    cursor: pointer; 
+} 
+

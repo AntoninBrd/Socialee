@@ -1,0 +1,174 @@
+.MenuNavButtons {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: fit-content; 
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000; /* Ensure it is above other content */
+    gap: 5px;
+
+
+        button {
+            display: inline-block;
+            font-size: 1.25rem;
+            background-color: $add-button-color;
+            padding: 0.75rem;
+            @include mq(768px) {
+                font-size: 1.25rem;
+            }
+        }
+}
+
+/*.MenuNavButtons {
+    position: sticky;
+    top: 0;
+    margin-bottom: 1rem;
+    background-color: $default-background-color;
+    border: 1px solid $default-background-color;
+    border-radius: 0px;
+
+
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+
+        button {
+            font-size: 1.25rem;
+            background-color: $add-button-color;
+            padding: 0.75rem;
+            @include mq(768px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}*/
+
+.OfferEntryNavButtons {
+    position: relative;
+    top: 0;
+    margin-bottom: 1rem;
+    background-color: $default-background-color;
+    border: 1px solid $default-background-color;
+    border-radius: 0px;
+
+    form {
+        display: flex;
+        justify-content: space-between;
+
+
+        button {
+            font-size: 1.25rem;
+            background-color: $add-button-color;
+            padding: 0.75rem;
+            @include mq(768px) {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+.SettingsButton {
+    position: absolute;
+    top: 65px;
+    right: 360px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-radius: 0px;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+
+
+    button {
+        font-size: 1.25rem;
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 0.25rem;
+        @include mq(768px) {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.Filter_NewOffer_Buttons {
+    position: static;
+    top: 0;
+    margin-bottom: 0.1rem;
+    background-color: $container-bgcolor;
+    border: 1px solid $container-bgcolor;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+
+
+        button {
+            color: $add-button-color;
+            font-weight: 1000;
+            background-color: $container-bgcolor;
+            border: 1px solid $container-bgcolor;
+            padding: 0.2rem;
+            width: 50%;
+            @include mq(768px) {
+                font-size: 1.5rem;
+            }
+        }
+}
+
+.ConversationsButton {
+    position: absolute;
+    top: 55px;
+    right: 380px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-radius: 0px;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+
+
+    button {
+        font-size: 1.25rem;
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 0.25rem;
+        @include mq(768px) {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.BackNavButton {
+    display: flex;
+    place-items: left;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 0.1rem;
+    background-color: transparent;
+    border-radius: 0px;
+
+    button {
+        
+        font-size: 1.25rem;
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 0.25rem;
+        @include mq(768px) {
+            font-size: 1.25rem;
+        }
+    }
+}

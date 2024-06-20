@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/sass/style.css"/>
+    <script src="/js/main.js" type="module"></script>
+    <title>Fil d'actualité</title>
+</head>
+
+
+
+<body>
+   <main>
+
+        <section class="OfferFilters">
+
+            <!--<h1> Filtres </h1>-->
+
+            <form id="OfferActivity">
+                <label for="activitychoice"> Choose an activity :</label>
+                <select id="activitychoice">
+                    <option value="" disabled selected hidden>Type d'Activité</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Promenade">Promenade</option>
+                    <option value="Café">Café</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </form>
+
+            <form id="OfferTime">
+                <label for="newTitle"> Enter a date and time :</label>
+                <input id="newTitle" type="datetime-local" size="40" autocomplete="off"  tabindex="0" />
+            </form>
+
+            <form id="OfferOther">
+                <label for="activityspecs"> Indicate the number of people :</label>
+                <select id="activityspecs">
+                    <option value="" disabled selected hidden>Nombre de personnes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">4</option>
+                    <option value="4+">4 ou plus</option>
+                </select>
+            </form>
+
+            <form id="OfferLocation">
+                <label for="newlocation"> Enter a location for the activity :</label>
+                <input id="newlocation" type="text" size="40" autocomplete="off" placeholder="Localisation" tabindex="0" />
+            </form>
+ 
+            <form class="Filter_NewOffer_Buttons">
+                <button id="addOffer" class="button" title="Add new offer" aria-label="Add new offer to feed" tabindex="0">+</button>
+                <button id="Profil" class="button" title="Apply filters" aria-label="Apply filters" tabindex="0"> <i class="fa fa-search"></i></button>  
+            </form>
+        </section>
+
+
+        <section class="OffersContainer">
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+
+
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+
+            <div class="offer">
+                <div class="UserInfo">
+                    <img src= "/Images/best_moments.jpg" alt="Sender Avatar" class="avatar"> 
+                    <h3 class="userOffer"> Username </h3>
+                </div>
+                
+                <div class="MandatoryOfferInfo">
+                    <div class="ActivityType">
+                        <h4 class="Activity"> Activité : </h4>
+                        <label for="Activity"> Musée </label> 
+                    </div>
+                    <div class="ActivityDate">
+                        <h4 class="Date"> Date : </h4>
+                        <label for="Date"> 21 Mai 2024 </label>
+                    </div>
+                </div>
+
+                <div class="OptionalOfferInfo">
+                    <h4 class="Details"> Détails : </h4>
+                    <label for="Details"> Grenoble </label> 
+                </div>
+
+                <div class="RespondButton">
+                    <button ><i class="fa fa-share-square-o"></i> </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="MenuNavButtons">
+        
+            <button id="Connections" class="button" title="Connect menu" aria-label="Access to connections menu" tabindex="0"> <i class="fa fa-list"></i> Connect </button>
+            <button id="Feed" class="button" title="Feed menu" aria-label="Access to feed menu" tabindex="0"> <i class="fa fa-home"></i> Feed </button>
+            <button id="Profil" class="button" title="Profil menu" aria-label="Access to profil menu" tabindex="0"> <i class="fa fa-user"></i> Profil </button>
+    
+        </section>
+
+   </main> 
+</body>
+</html>

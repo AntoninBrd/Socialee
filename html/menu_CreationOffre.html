@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/sass/style.css"/>
+    <script src="/js/main.js" type="module"></script>
+    <title>Nouvelle offre</title>
+</head>
+<body>
+   <main>
+
+        <section class="OfferEntryNavButtons">
+            <form>
+                <button id="back" class="button" title="Exit request creation menu" aria-label="Go back" tabindex="0"><i class="fa fa-arrow-left"></i> </button>
+                <button id="addOffer" class="button" title="Add new offer" aria-label="Add new offer to feed" tabindex="0"><i class="fa fa-plus"></i></button>
+            </form>
+        </section>
+
+        <section class="newOfferEntry">
+
+            <form id="OfferTitle">
+                <label for="newTitle"> Enter a title :</label>
+                <input id="newTitle" type="text" size="40" autocomplete="off" placeholder="Titre" tabindex="0" />
+            </form>
+
+            <form id="OfferActivity">
+                <label for="activitychoice"> Choose an activity :</label>
+                <select id="activitychoice">
+                    <option value="" disabled selected hidden>Type d'Activité</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Promenade">Promenade</option>
+                    <option value="Café">Café</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </form>
+
+            <form id="OfferTime">
+                <label for="newTitle"> Enter a date and time :</label>
+                <input id="newTitle" type="datetime-local" size="40" autocomplete="off"  tabindex="0" />
+            </form>
+
+            <form id="OfferOther">
+                <label for="activityspecs"> Indicate the number of people :</label>
+                <select id="activityspecs">
+                    <option value="" disabled selected hidden>Nombre de personnes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4 ou plus</option>
+                </select>
+            </form>
+
+            <form id="OfferLocation">
+                <label for="newlocation"> Enter a location for the activity :</label>
+                <input id="newlocation" type="text" size="40" autocomplete="off" placeholder="Localisation" tabindex="0" />
+            </form>
+
+            <form id="OfferDetails">
+                <label for="newdetails"> Enter details :</label>
+                <input id="newdetails" type="text" size="40" autocomplete="off" placeholder="Entrez les détails" tabindex="0" />
+            </form>
+
+        </section>
+
+   </main> 
+</body>
+</html>
